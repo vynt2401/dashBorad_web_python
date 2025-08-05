@@ -2,6 +2,9 @@ from dash import Dash, html, dcc
 import plotly.express as px
 import pandas as pd
 import db
+import QR_CODE
+
+
 
 app = Dash()
 
@@ -56,11 +59,9 @@ db.create_table()
 
 tableFruit = db.addTable(df.iloc[0]['Fruit'], df.iloc[0]['Amount'], df.iloc[0]['City'])
 
-
-
-
-
-
+print('Or u can use this QR code int the next folder to connect to the webpage dash app')
+QR_CODE.generateByDefault('http://127.0.0.1:8050/')
 if __name__ == '__main__':
     app.run(dev_tools_hot_reload=False, debug=True, port=8050)
+    
     
