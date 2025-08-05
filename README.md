@@ -3,4 +3,4 @@ go to your enviroment and use:
 
 run app.py
 
-its will show a local ip http://126.0.0.1 with port 8050, u ctrl in to that, its will show u a basic dash
+its will show a local ip http://127.0.0.1 with port 8050, u ctrl in to that, its will show u a basic dash
